@@ -12,26 +12,59 @@ class Course
 private:
 	string id;
 	string title;
-	vector<Course*> prerequisites;
+	vector<Course> prerequisites;
 
 public:
+	/// <summary>
+	/// Default constructor
+	/// </summary>
 	Course() {
 	}
+
+	/// <summary>
+	/// Accessor method for Id
+	/// </summary>
+	/// <returns></returns>
 	string getId() const {
 		return this->id;
 	}
+
+	/// <summary>
+	/// Accessor method for Title
+	/// </summary>
+	/// <returns></returns>
 	string getTitle() const {
 		return this->title;
 	}
-	void setId(string id) {
+
+	/// <summary>
+	/// Mutator method for Id
+	/// </summary>
+	/// <param name="id"></param>
+	void setId(const string id) {
 		this->id = id;
 	}
-	void setTitle(string title) {
+
+	/// <summary>
+	/// Mutator method for Title
+	/// </summary>
+	/// <param name="title"></param>
+	void setTitle(const string title) {
 		this->title = title;
 	}
-	void addPrerequisite(Course& course) {
-		prerequisites.push_back(&course);
+
+	/// <summary>
+	/// Add a prerequisite 
+	/// </summary>
+	/// <param name="course"></param>
+	void addPrerequisite(const Course course) {
+		prerequisites.push_back(course);
 	}
+
+	/// <summary>
+	/// Display course Id, Title, and Prerequisites
+	/// to stdout
+	/// </summary>
 	void print() const;
 };
 

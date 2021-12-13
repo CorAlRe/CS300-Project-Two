@@ -28,3 +28,15 @@ All of your coding will be completed in the integrated development environment (
 *    Course Information: Develop working code to print course information. This code should allow users to look up a course and print out information about its title and prerequisites. Your program will need to prompt the user to enter the courseNumber. You will then print out the name of the course along with the prerequisite courseNumbers and titles. See Project Two Sample Program Output in the Supporting Documents section.
 
 *    Industry Standard Best Practices: Apply industry standard best practices in code design. Your program should display an error message when user input does not fall within parameters. You should also use in-line comments and appropriate naming conventions to enhance readability and maintainability.
+
+# Approach
+I developed psueodo code for three different data types to represent the information. Then I used Big-O runtime analysis to determine which datatype was optimal for the problem. 
+
+# Roadblocks
+My psuedocode revealed design flaws when it came to coming up with an implementations between vector, hash table, and binary search trees. I tried to use the same sort and search method for all three but found that I could have simplified the complexity of some with linear searches instead. 
+In the end the flaws did not impact the final decision to use a vector as the backing structure as the hash table and binary search trees had other drawbacks that a redesign couldn't overcome. However during implementation, I changed from a MergeSort to an Insertion Sort when implementing the vector.
+
+# Lessions Learned
+Overall I've learned that pseudocode is useful for catching design problems before implementation. Implementation went more smoothly as I followed the pseudocode. 
+I also learned that inline code comments can really help explain something that is not obvious to another reader.
+

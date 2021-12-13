@@ -17,6 +17,9 @@
       <UniqueIdentifier>{71985073-5dcf-428d-a7d4-c5a7598f7071}</UniqueIdentifier>
       <Extensions>csv</Extensions>
     </Filter>
+    <Filter Include="Docs">
+      <UniqueIdentifier>{5a9a79b1-5738-4b79-ab91-9b8a195ada08}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -38,6 +41,12 @@
   <ItemGroup>
     <None Include="Data\Advising Program Input.csv">
       <Filter>Data</Filter>
+    </None>
+    <None Include="Docs\6-2 Project One.docx">
+      <Filter>Docs</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Docs</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
